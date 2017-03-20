@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 /**
  *Escreva um algoritmo que leia três números decimais: A, B e C. Em seguida, calcule e mostre:
-f) o perímetro do retângulo que tem lados A e B.
  * @author Marcelo Pereira
  */
 public class Exercicio9 {
@@ -30,11 +29,11 @@ public class Exercicio9 {
         exp = 2.0;
         pi = 3.14159;
         calculo = pi * (Math.pow(c, exp));
-        System.out.printf("A área de um ciruculo de ráio C é igual a %.2f \n", calculo);
+        System.out.printf("A área de um circulo de ráio C é igual a %.2f \n", calculo);
         
         //c) a área do trapézio que tem A e B por bases e C por altura.
         calculo = ((a+b)*2)/2;
-        System.out.printf("A área de um traézio de base A = %.2f e B = %.2f é igual a %.2f \n", a, b, calculo);
+        System.out.printf("A área de um trapézio de base A = %.2f e B = %.2f é igual a %.2f \n", a, b, calculo);
         
         //d) a área do quadrado que tem lado B.
         calculo = b*b;
@@ -42,7 +41,11 @@ public class Exercicio9 {
         
         //e) a área do retângulo que tem lados A e B.
         calculo = a*b;
-        System.out.printf("A area de um retangulo de largura A = %.1f e altura B = %.1f é igual a %.1f", a, b, calculo);
+        System.out.printf("A area de um retângulo de largura A = %.1f e altura B = %.1f é igual a %.1f \n", a, b, calculo);
+        
+        //f) o perímetro do retângulo que tem lados A e B.
+        calculo = 2*(a+b);
+        System.out.printf("O perímetro de um retângulo de lado A = %.1f e B = %.1f é igual a %.1f \n", a, b, calculo);
 
     }
     
