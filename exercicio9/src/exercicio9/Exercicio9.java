@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 /**
  *Escreva um algoritmo que leia três números decimais: A, B e C. Em seguida, calcule e mostre:
-c) a área do trapézio que tem A e B por bases e C por altura.
 d) a área do quadrado que tem lado B.
 e) a área do retângulo que tem lados A e B.
 f) o perímetro do retângulo que tem lados A e B.
@@ -34,6 +33,10 @@ public class Exercicio9 {
         pi = 3.14159;
         calculo = pi * (Math.pow(c, exp));
         System.out.printf("A área de um ciruculo de ráio C é igual a %.2f \n", calculo);
+        
+        //c) a área do trapézio que tem A e B por bases e C por altura.
+        calculo = ((a+b)*2)/2;
+        System.out.printf("A área de um traézio de base A = %.2f e B = %.2f é igual a %.2f \n", a, b, calculo);
 
     }
     
