@@ -23,8 +23,10 @@ public class Aula20170321 {
         double a = c / p;
         double b = -(a*s);
         
-        //Saidas
+        //Saídas
+        
         System.out.println(a + "x²+"+b+"x+"+c+"=0");
+        System.out.println("Viva a Matemática");
         
     }
     
