@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class exec1 {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        int num=0, sum;
+        int num, sum;
         
         System.out.print("Digite um número: ");
         num = entrada.nextInt();
@@ -17,6 +17,9 @@ public class exec1 {
         if(num>100){
             sum = num + 150;
             System.out.printf("O número %d somado a 150 é: %d\n", num, sum);
+        }
+        else{
+            System.out.println("O valor digitado foi: "+ num);
         }
     }
     
