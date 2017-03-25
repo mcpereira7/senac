@@ -19,13 +19,13 @@ public class exec9 {
         int func=0;
         double sal=0.0, vlh=0, htb=0;
         
-        System.out.println("Digite a identificação do Funcionário");
+        System.out.print("Digite a identificação do Funcionário: ");
         func = Integer.parseInt(leitor.nextLine());
         
-        System.out.println("Informe a quantidade de horas trabalhadas:");
+        System.out.print("Informe a quantidade de horas trabalhadas: ");
         htb = Double.parseDouble(leitor.nextLine());
         
-        System.out.println("Informe o valor da hora deste funcionário:");
+        System.out.print("Informe o valor da hora deste funcionário: ");
         vlh = Double.parseDouble(leitor.nextLine());
         
         sal =htb*vlh ;
