@@ -16,8 +16,8 @@ public class exec9 {
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
         
-        int func=0;
-        double sal=0.0, vlh=0, htb=0;
+        int func;
+        double sal, vlh, htb;
         
         System.out.print("Digite a identificação do Funcionário: ");
         func = Integer.parseInt(leitor.nextLine());
