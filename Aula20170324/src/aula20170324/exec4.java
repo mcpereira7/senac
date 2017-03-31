@@ -26,7 +26,7 @@ public class exec4 {
         }
         conta=kwh*valorkwh;
         if(conta<11.90){
-            System.out.println("Você não atingiu o consumo mínimo.");
+            System.out.println("O valor de sua conta é: R$ 11,90");
     }   else {
             System.out.printf("O valor de sua conta é: R$ %.2f \n", conta);
         }
