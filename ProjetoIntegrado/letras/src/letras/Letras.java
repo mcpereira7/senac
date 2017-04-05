@@ -13,7 +13,7 @@ public class Letras {
         Scanner console = new Scanner(System.in);
         String letra =  console.next();
         
-        switch(letra.toLowerCase().matches("[a-z]")){
+        switch(letra.toLowerCase()){
             case "a":
             case "e":
             case "i":
