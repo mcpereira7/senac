@@ -16,13 +16,13 @@ public class DiasMesSwitch {
                         case 8:
                         case 10:
                         case 12:
-                            JOptionPane.showMessageDialog(null, "Este mês contém 31 dias");
+                            JOptionPane.showMessageDialog(null, "O mês "+mes+" contém 31 dias");
                             break;
                         case 2:
-                            JOptionPane.showMessageDialog(null, "Este mês contém 28 dias");
+                            JOptionPane.showMessageDialog(null, "O mês "+mes+" contém 28 dias");
                             break;
                         default:
-                            JOptionPane.showMessageDialog(null, "Este mês contém 30 dias");
+                            JOptionPane.showMessageDialog(null, "O mês "+mes+" contém 30 dias");
                             break;
                     }
         }
