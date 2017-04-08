@@ -5,9 +5,10 @@
 package aula20170407;
 
 public class decrescente {
+
     public static void main(String[] args) {
-        
-        for(int i =100; i>=0; i=i-5){
+
+        for (int i = 100; i >= 0; i = i - 5) {
             System.out.println(i);
         }
     }
