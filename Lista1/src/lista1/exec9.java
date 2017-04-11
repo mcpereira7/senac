@@ -13,25 +13,26 @@ import java.util.Scanner;
  * @author Marcelo Pereira
  */
 public class exec9 {
+
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
-        
+
         int func;
         double sal, vlh, htb;
-        
+
         System.out.print("Digite a identificação do Funcionário: ");
         func = Integer.parseInt(leitor.nextLine());
-        
+
         System.out.print("Informe a quantidade de horas trabalhadas: ");
         htb = Double.parseDouble(leitor.nextLine());
-        
+
         System.out.print("Informe o valor da hora deste funcionário: ");
         vlh = Double.parseDouble(leitor.nextLine());
-        
-        sal =htb*vlh ;
-        
+
+        sal = htb * vlh;
+
         System.out.printf("O salário do funcionário %d é de R$ %.2f \n", func, sal);
-        
+
     }
-    
+
 }
