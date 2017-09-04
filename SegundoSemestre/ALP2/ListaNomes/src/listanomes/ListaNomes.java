@@ -48,7 +48,7 @@ public class ListaNomes {
         Scanner sc = new Scanner(System.in);
 
         // Criando o vetor com tamanho 50
-        String[] listaNomes = new String[5];
+        String[] listaNomes = new String[50];
         // Variaveis diversas
         int contarNullo = 0;
         String opcao = "";
