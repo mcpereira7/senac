@@ -15,6 +15,8 @@ public class Exercicio1 {
 
     public static JPanel cadastrarUsuario() {
 
+        // Objeto do tipo Pessoa com nome, endereço e telefone
+        Pessoa pessoa = new Pessoa();
         JPanel jpExec01 = new JPanel();
         jpExec01.setLayout(new BoxLayout(jpExec01, BoxLayout.Y_AXIS));
         JLabel jlExec01 = new JLabel("Cadastro Usuário");
@@ -57,19 +59,22 @@ public class Exercicio1 {
         acaoClicar = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String nome = "", endereco = "", telefone = "";
+                // String nome = "", endereco = "", telefone = "";
+
                 if (e.getSource() == botaoVoltar) {
                     CriarGUI.criarFrame();
                 }
                 if (e.getSource() == botaoSalvar) {
-                    nome = jtNome.getText();
-                    endereco = jtEndereco.getText();
-                    telefone = jtTelefone.getText();
+
+                    pessoa.salvarDados(jtNome.getText(), jtEndereco.getText(), jtTelefone.getText());
                     //System.out.println(nome); 
+                    jtNome.setText(null);
+                    jtEndereco.setText(null);
+                    jtTelefone.setText(null);
 
                 }
                 if (e.getSource() == botaoExibir) {
-                    JOptionPane.showMessageDialog(null, "Nome: " + jtNome.getText() + "\nEndereço: " + jtEndereco.getText() + "\nTelefone :" + jtTelefone.getText());
+                    JOptionPane.showMessageDialog(null, "Nome: " + pessoa.nome + "\nEndereço: " + pessoa.endereco + "\nTelefone :" + pessoa.telefone);
                 }
             }
 

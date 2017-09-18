@@ -1,20 +1,14 @@
 package atividade03;
 
-import java.awt.BorderLayout;
 import java.awt.CardLayout;
 import java.awt.Dimension;
-import java.awt.GridBagLayout;
-import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JTextArea;
-import javax.swing.border.Border;
 
 public class CriarGUI {
 // Criando a interface desktop
@@ -60,6 +54,8 @@ public class CriarGUI {
         // Adicionando os paineis dos exercicios
         painelInicial.add(Exercicio1.cadastrarUsuario(), "Exec01");
         painelInicial.add(Exercicio2.adivinhaNumero(), "Exec02");
+        painelInicial.add(Exercicio3.MediaTresValores(), "Exec03");
+        painelInicial.add(Exercicio4.ListaJogos(), "Exec04");
         
         // Botões dos exercicios
        final JButton btExec01 = new JButton("exercicio 01");
@@ -83,12 +79,22 @@ public class CriarGUI {
                 if(e.getSource()==btExec02){
                     cardLayoutATV.show(painelInicial, "Exec02");
                 }
+                if(e.getSource()==btExec03){
+                    cardLayoutATV.show(painelInicial, "Exec03");
+                }
+                if(e.getSource()==btExec04){
+                    cardLayoutATV.show(painelInicial, "Exec04");
+                }
             }
         };
         
         // Adicionando o ActionListener aos Botões
         btExec01.addActionListener(acaoClicar);
         btExec02.addActionListener(acaoClicar);
+        btExec03.addActionListener(acaoClicar);
+        btExec04.addActionListener(acaoClicar);
+        
+        
         
         frame.getContentPane().add(painelInicial);
         frame.pack();
