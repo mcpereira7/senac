@@ -8,8 +8,7 @@ package atividade03;
 import java.util.Scanner;
 
 /**
- * Marcelo Pereira 
- * Caique Brandão
+ * Marcelo Pereira Caique Brandão
  */
 public class Atividade03 {
 
@@ -17,17 +16,17 @@ public class Atividade03 {
         do {
             Scanner sc = new Scanner(System.in);
             Pilha pilha = new Pilha();
-            String texto="";
+            String texto = "";
             menuOpcao = -1;
-                System.out.println("Escolha uma Opção:");
-                System.out.println("1 - Criptografar Mensagem");
-                System.out.println("2 - Descriptografar Mensagem");
-                System.out.println("0 - Sair");
-                System.out.print("Opção: ");
-                menuOpcao = sc.nextInt();
-            
+            System.out.println("Escolha uma Opção:");
+            System.out.println("1 - Criptografar Mensagem");
+            System.out.println("2 - Descriptografar Mensagem");
+            System.out.println("0 - Sair");
+            System.out.print("Opção: ");
+            menuOpcao = sc.nextInt();
+
             switch (menuOpcao) {
-                
+
                 case 0:
                     break;
                 case 1:
@@ -61,21 +60,21 @@ public class Atividade03 {
 
     static void desempilhaString(Pilha pilha, String txtCripto) {
         pilha = empilharString(txtCripto);
-        String txt="";
+        StringBuilder txt = new StringBuilder();
 //        Pilha pilha = new Pilha();
         for (int i = 0; i < txtCripto.length(); i++) {
-            
-//            txt = txt+""+pilha.pop().toString();
-            System.out.print(pilha.pop().toString());
-            
-        }
 
+            txt.append(pilha.pop().toString());
+
+            // System.out.print(pilha.pop().toString());
+        }
+        System.out.println("\ntexto criptografado:");
+        System.out.println(txt.toString()+"\n");
 //        return txtCripto;
     }
 
     public static void main(String[] args) {
         Menu(0);
-        
 
     }
 

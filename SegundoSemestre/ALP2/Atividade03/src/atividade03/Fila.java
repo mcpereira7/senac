@@ -54,8 +54,10 @@ public class Fila {
     }
 
    public void imprimeFila(){
-       for(int i=0; i<50; i++){
-           System.out.println(dados[i]);
+       for(int i=0; i<dados.length; i++){
+           if(dados[i]!=null){
+               System.out.println(dados[i]);
+           }
        }
    }
     public void furarFila(Object x) {
